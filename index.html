@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Designs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="assets/Logo.svg" class="logo" alt="logo">
+            <div class="nav">
+                <a href="#">Home</a>
+                <a href="#">Pages</a>
+                <a href="#">Services</a>
+                <a href="#">Project</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+                <a href="#"> <img src="assets/Search.svg" class="search" alt="search icon"> </a>
+            </div>
+        </div>
+        <div class="main-section">
+            <div class="main-section-content">
+                <h1>Let Your Home <br /> Be Unique</h1>
+                <h2>There are many variations of the passages of
+                    <br>
+                    lorem Ipsum fromavailable, majority.
+                </h2>
+                <button class="btn" onclick="revealOnClick()">Get Started
+                    <img src="assets/arrow.svg" class="arrow" alt="arrow">
+                </button>
+            </div>
+        </div>
+        <div class="services" id="services">
+            <div class="row">
+                <div class="col" id="project" onmouseenter="hideOthers('project')" onmouseleave="showOthers('project')">
+                    <h3>Project Plan</h3>
+                    <p>There are many variations of the <br> passages of lorem Ipsum from <br> 
+                        available, majority.</p>
+                    <a href="#" class="read-more">Read More
+                        <img src="assets/arrow.svg" class="arrow" alt="arrow">
+                    </a>
+                </div>
+                <div class="col" id="interior" onmouseenter="hideOthers('interior')" onmouseleave="showOthers('interior')">
+                    <h3>Interior Work</h3>
+                    <p>There are many variations of the <br> passages of lorem Ipsum from <br> 
+                        available, majority.</p>
+                    <a href="#" class="read-more">Read More
+                        <img src="assets/arrow.svg" class="arrow" alt="arrow">
+                    </a>
+                </div>
+                <div class="col" id="realization" onmouseenter="hideOthers('realization')" onmouseleave="showOthers('realization')">
+                    <h3>Realization</h3>
+                    <p>There are many variations of the <br> passages of lorem Ipsum from <br> 
+                        available, majority.</p>
+                    <a href="#" class="read-more">Read More
+                        <img src="assets/arrow.svg" class="arrow" alt="arrow">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
